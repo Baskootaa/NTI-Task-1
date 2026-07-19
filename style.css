@@ -1,0 +1,113 @@
+ body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            width: 600px;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .red-line {
+            border-top: 2px solid red;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+
+        .label-column {
+            width: 150px;
+            font-size: 16px;
+            font-weight: bold;
+            padding-top: 5px;
+        }
+
+        .input-column {
+            flex: 1;
+        }
+
+        input[type="date"],
+        input[type="time"] {
+            padding: 5px;
+            font-family: inherit;
+            border: 1px solid #7a7a7a;
+        }
+
+        .inline-inputs {
+            display: flex;
+            gap: 20px;
+        }
+
+        .inline-inputs input {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #7a7a7a;
+            box-sizing: border-box;
+        }
+
+        .phone-input {
+            width: 60%;
+            padding: 6px;
+            border: 1px solid #7a7a7a;
+        }
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            padding-top: 3px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            border: 1px solid #7a7a7a;
+            resize: vertical;
+            box-sizing: border-box;
+        }
+
+        .checkbox-container {
+            font-size: 16px;
+        }
+
+        .checkbox-title {
+            margin-bottom: 8px;
+        }
+
+        .checkbox-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .submit-btn {
+            background-color: #f0f0f0;
+            border: 1px solid #7a7a7a;
+            padding: 5px 15px;
+            font-family: inherit;
+            font-size: 15px;
+            cursor: pointer;
+            margin-left: 150px; /* ليتحاذى مع المدخلات */
+            border-radius: 2px;
+        }
+
+        .submit-btn:hover {
+            background-color: #e5e5e5;
+        }

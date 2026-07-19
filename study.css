@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b131a; 
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* حاوية الهيدر العلوي */
+.header-section {
+    padding: 30px 40px;
+}
+h1{
+    text-align: center;
+}
+
+.header-section h1 {
+    color: #bfa15f; 
+    margin: 0 0 15px 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+/* الحاوية الرئيسية للشبكة (تظهر صفين وكل صف به عنصرين) */
+.content-container {
+    background-color: #3b5d8c; 
+    margin: 0 20px 40px 20px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* هذا السطر هو المسؤول عن تقسيم الشاشة لنصفين */
+    gap: 30px; 
+}
+
+/* الكارت الداخلي (نص وصورة بجانب بعض) */
+.travel-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.2); /* إضافة خلفية خفيفة خلف الكارت لزيادة الجمالية */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* تفاصيل النص الجانبي (تم تغيير اللون ليكون واضحاً للقراءة) */
+.card-text {
+    font-family: 'Courier New', Courier, monospace; 
+    color: #ffffff; /* تم تغييره للأبيض ليكون واضحاً، يمكنك تجربة #e0cfab أيضاً */
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* تنسيق الصور والحدود السوداء */
+.card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #000000; 
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Form</title>
+     <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Doctor Appointment Form</h2>
+    <div class="red-line"></div>
+
+    <form>
+        <!-- Appointment Date -->
+        <div class="form-group">
+            <div class="label-column">Appointment<br>Date</div>
+            <div class="input-column">
+                <input type="date">
+            </div>
+        </div>
+
+        <!-- Appointment Time -->
+        <div class="form-group">
+            <div class="label-column">Appointment<br>Time</div>
+            <div class="input-column">
+                <input type="time">
+            </div>
+        </div>
+
+        <!-- Name -->
+        <div class="form-group">
+            <div class="label-column">Name</div>
+            <div class="input-column inline-inputs">
+                <input type="text" placeholder="First">
+                <input type="text" placeholder="Last">
+            </div>
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+            <div class="label-column">Gender</div>
+            <div class="input-column radio-group">
+                <label>Male <input type="radio" name="gender" value="male"  checked></label>
+                <label>Female <input type="radio" name="gender" value="female"></label>
+            </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="form-group">
+            <div class="label-column">Phone</div>
+            <div class="input-column">
+                <input type="text" class="phone-input" placeholder="####">
+            </div>
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+            <div class="label-column">Address</div>
+            <div class="input-column inline-inputs">
+                <input type="text" placeholder="city">
+                <input type="text" placeholder="state">
+            </div>
+        </div>
+
+        <!-- Your Query -->
+        <div class="form-group">
+            <div class="label-column">Your Query</div>
+            <div class="input-column">
+                <textarea></textarea>
+            </div>
+        </div>
+
+        <!-- Appointment Type -->
+        <div class="form-group">
+            <div class="label-column">Appointment<br>Type</div>
+            <div class="input-column checkbox-container">
+                <div class="checkbox-title">Select which appointment type(s) you require</div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="cervix" checked>
+                    <label for="cervix">Cervix checkup</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="heart" checked>
+                    <label for="heart">Heart checkup</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="eye">
+                    <label for="eye">Eye check-up</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="hearing">
+                    <label for="hearing">Hearing Test</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Send</button>
+    </form>
+</div>
+
+</body>
+</html>
